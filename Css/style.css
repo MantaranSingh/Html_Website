@@ -100,6 +100,7 @@ header {
 
 .breadcrumb ul {
     display: flex;
+    flex-wrap: wrap;
     padding: 1em 0;
     border-bottom: 1px solid lightgrey;
 }
@@ -212,9 +213,9 @@ footer div ul {
     footer {
         padding-left: 5em;
     }
-    .wrapper{
+    .wrapper {
         width: 60%;
-        margin:20px auto!important;
+        margin: 20px auto!important;
     }
 }
 
@@ -250,4 +251,23 @@ footer div ul {
     color: white;
     cursor: pointer;
     box-shadow: 0px 0px 10px 1px red;
+}
+
+@media(max-width:768px) {
+    body {
+        font-size: x-small;
+    }
+    footer div {
+        padding: 0 1em;
+    }
+    .breadcrumb ul li {
+        margin: 0 7px;
+    }
+    .cards h2 {
+        font-size: 15px;
+    }
+    .wrapper {
+        justify-content: center;
+    }
+
 }
